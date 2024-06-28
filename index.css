@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "inter ExtraBold";
+  src: url("./fonts/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter Medium";
+  src: url("./fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter semiBold";
+  src: url("./fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter regular";
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 550px;
+  height: 730px;
+  background-color: #E5E7EB;
+}
+
+#top {
+  background-color: #6943ff;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  font-family: "inter ExtraBold", "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  padding-top: 25px;
+}
+
+#input-nr {
+  width: 120px;
+  height: 80px;
+  background-color: 6943FF;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "inter Medium", "Times New Roman", Times, serif;
+  text-align: center;
+  border: 2px solid #b295ff;
+  border-radius: px;
+}
+
+#convert-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #3d3d3d;
+  font-family: "inter Medium", "Times New Roman", Times, serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+#items-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  height: 470px;
+}
+
+.item {
+  flex: 1;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item-title {
+  color: #5a537b;
+  font-family: "inter semiBold", "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.item-description {
+  color: #353535;
+  font-family: "inter regular", "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+
+/* hide + - arrows inside input of type number */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* General style for the input */
+input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px; /* Adjust width as needed */
+}
+
